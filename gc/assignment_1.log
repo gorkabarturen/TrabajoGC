@@ -1,9 +1,9 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2015/dev/Debian) (rev 4971)  (format=lualatex 2016.5.2)  22 MAY 2016 13:27
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2015/dev/Debian) (rev 4971)  (format=lualatex 2016.5.11)  22 MAY 2016 18:17
  restricted \write18 enabled.
 **assignment_1.tex
 (./assignment_1.tex
 LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -98,25 +98,25 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 )
 \c@homeworkProblemCounter=\count89
  (./assignment_1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 100.
+(lastpage)             ! on input line 101.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
@@ -158,17 +158,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 102.
+(Font)              <12> on input line 103.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 102.
+(Font)              <8> on input line 103.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 102.
+(Font)              <6> on input line 103.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Missing character: There is no é (U+00E9) in font cmr9!
-] (./assignment_1.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./assignment_1.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -176,29 +174,128 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 )
 \tf@toc=\write3
 
-[2] [3] [4
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+ [3] [4
+
+Missing character: There is no … (U+2026) in font cmr10!
+Missing character: There is no … (U+2026) in font cmr10!
+Missing character: There is no … (U+2026) in font cmr10!
+] [5
+
+]
+<PA.png, id=23, 529.22719pt x 232.61906pt>
+File: PA.png Graphic file (type png)
+ <use PA.png>
+Package pdftex.def Info: PA.png used on input line 270.
+(pdftex.def)             Requested size: 399.2946pt x 175.5074pt.
+ [6
+
+Missing character: There is no ¿ (U+00BF) in font cmr10!
+Missing character: There is no ¿ (U+00BF) in font cmr10!
+Missing character: There is no ¿ (U+00BF) in font cmr10!
+Missing character: There is no … (U+2026) in font cmr10!
+Missing character: There is no … (U+2026) in font cmr10!
+<./PA.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
+
+ []
+
+[7
+
+] <pFab.png, id=30, 552.0625pt x 780.9175pt>
+File: pFab.png Graphic file (type png)
+ <use pFab.png>
+Package pdftex.def Info: pFab.png used on input line 315.
+(pdftex.def)             Requested size: 249.06602pt x 352.31624pt.
+ [8
+
+<./pFab.png>]
+<MarketInt.png, id=35, 715.67375pt x 795.97375pt>
+File: MarketInt.png Graphic file (type png)
+ <use MarketInt.png>
+Package pdftex.def Info: MarketInt.png used on input line 329.
+(pdftex.def)             Requested size: 352.31624pt x 391.85239pt.
+ [9
+
+<./MarketInt.png>] [10
+
+] [11
+
+]
+Overfull \hbox (10.38475pt too wide) in paragraph at lines 393--395
+[][]\OT1/cmr/m/n/10 El Conocimiento: nivel de conocimiento gen-er-ado y/o reg-i
+strado y su nivel de con-sumo o aprovechamiento-
+ []
+
+[12
+
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+Missing character: There is no º (U+00BA) in font cmr10!
+] [13
+
+Missing character: There is no … (U+2026) in font cmr10!
+]
+Overfull \hbox (7.91243pt too wide) in paragraph at lines 432--433
+[][]\OT1/cmr/m/n/10 Rep-re-sen-tantes de las areas fun-cionales que van in-vol
+u-cradas en las ini-cia-ti-vas de gestion del conocimiento. 
+ []
+
+<docu.png, id=53, 430.60875pt x 267.24844pt>
+File: docu.png Graphic file (type png)
+ <use docu.png>
+Package pdftex.def Info: docu.png used on input line 465.
+(pdftex.def)             Requested size: 352.31624pt x 218.66394pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.54448pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14
+
+] [15<./docu.png>] [16
 
 ] 
 AED: lastpage setting LastPage
-[5] (./assignment_1.aux))
+[17
+
+] (./assignment_1.aux))
 
 Here is how much of LuaTeX's memory you used:
- 2066 strings out of 493787
- 100000,552014 words of node,token memory allocated
- 275 words of node memory still in use:
+ 2117 strings out of 494781
+ 100000,221844 words of node,token memory allocated
+ 318 words of node memory still in use:
    2 hlist, 1 vlist, 1 rule, 2 glue, 41 glue_spec, 2 write nodes
-   avail lists: 2:18,3:132,4:986,5:167,6:3655,7:33,9:112,10:313
- 5751 multiletter control sequences out of 65536+600000
- 44 fonts using 1240439 bytes
- 37i,10n,43p,335b,263s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 2:18,3:134,4:862,5:219,6:2761,7:21,9:129,10:264
+ 5586 multiletter control sequences out of 65536+600000
+ 46 fonts using 1818587 bytes
+ 37i,11n,43p,586b,391s stack positions out of 5000i,500n,10000p,200000b,100000s
 <</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><</usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><</usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on assignment_1.pdf (5 pages, 62531 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on assignment_1.pdf (17 pages, 273773 bytes).
 
-PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+PDF statistics: 84 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

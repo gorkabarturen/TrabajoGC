@@ -6,6 +6,7 @@
 \usepackage{graphicx} % Required to insert images
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
+
 % Margins
 \topmargin=-0.35in
 \evensidemargin=0in
@@ -35,13 +36,13 @@
 
 % Header and footer for when a page split occurs within a problem environment
 \newcommand{\enterProblemHeader}[1]{
-\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
-\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}\nobreak
+\nobreak\extramarks{#1}\nobreak
 }
 
 % Header and footer for when a page split occurs between problem environments
 \newcommand{\exitProblemHeader}[1]{
-\nobreak\extramarks{#1 (continuacion)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{#1}\nobreak
 \nobreak\extramarks{#1}{}\nobreak
 }
 
@@ -63,7 +64,7 @@
 }
 
 \newcommand{\homeworkSectionName}{}
-\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\newenvironment{homeworkSection}[1][Parte \arabic{homeworkProblemCounter}]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
 \renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
 \subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
 \enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
@@ -76,7 +77,7 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\hmwkTitle}{Empresa XXX S.A.} % Assignment title
-\newcommand{\hmwkDueDate}{Miércoles,\ Mayo\ 25,\ 2016} % Due date
+\newcommand{\hmwkDueDate}{Mi\'{e}rcoles,\ Mayo\ 25,\ 2016} % Due date
 \newcommand{\hmwkClass}{GC} % Course/class
 \newcommand{\hmwkClassInstructor}{Maria Jose Gils} % Teacher/lecturer
 \newcommand{\hmwkAuthorName}{Gorka Barturen y Carlos Perales} % Your name
@@ -117,15 +118,18 @@
 
 % To have just one problem per page, simply put a \clearpage after each problem
 
-\begin{homeworkProblem}
-\lipsum[1]
+\begin{homeworkProblem}[1.1. Visi\'{o}n, Misi\'{o}n y estrategia]
+Visi\'{o}n:
+\begin{itemize}
 
- % Answer
-\begin{center}
-%\includegraphics[width=0.75\columnwidth]{example_figure} % Example image
-\end{center}
+\item Ser la empresa l\'{i}der en Espa\~{n}a en la venta de electrodom\'{e}sticos.
+\item Ser una empresa que trabaje tanto por la sostenibilidad de s\'{i} misma como por la de sus productos.
+\item mpliar la infraestructura de la empresa a nivel internacional.
+\item Mejora del ciclo de vida de los productos.
 
-%\lipsum[2]
+\end{itemize}
+
+Misi\'{o}n: Ser la empresa que produce los electrodom\'{e}sticos sostenibles con mejor relaci\'{o}n calidad-precio.
 
 \end{homeworkProblem}
 \clearpage
@@ -133,68 +137,362 @@
 %----------------------------------------------------------------------------------------
 %	PROBLEM 2
 %----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[1.2. Identificaci\'{o}n de los conocimientos pertinentes ]
 
-\begin{homeworkProblem}[Parte \#\arabic{homeworkProblemCounter}] % Custom section title
-\lipsum[3] % Question
+\begin{homeworkSection}[a. Auditor\'{i}a del conocimiento inicial]  % Custom section title
+Auditor\'{i}a de sistemas:
+\begin{itemize}
 
-%--------------------------------------------
+\item SAP  (Sistema ERP)
+\item Oracle (SGBD)
+\item Procesadores de textos 
+\item Intranet/Extranet
+\item DSS
+\item Sistemas expertos
+\item Agentes inteligentes
+\item Voice on IP (Skype, Teamspeak…)
+\item Videoconferencias (Skype, hangouts...)
+\item Messengers (Whatsapp, telegram…)
+\item E-mail (Gmail, Outlook…)
+\item VPN
+\item Sistemas legados
 
-\begin{homeworkSection}{(2.1)} % Section within problem
-\lipsum[4]\vspace{10pt} % Question
+\end{itemize}
 
-\problemAnswer{ % Answer
-\lipsum[5]
-}
+Auditor\'{i}a de personas:
+
+\begin{itemize}
+
+\item Accionistas de la asamblea general
+\item Miembros de la asamblea permanente
+\item Director general
+\item Representantes de cada departamento
+
+\end{itemize}
+
+
 \end{homeworkSection}
-
-%--------------------------------------------
-
-\begin{homeworkSection}{(2.2)} % Section within problem
-\problemAnswer{ % Answer
-\lipsum[6]
-}
-\end{homeworkSection}
-
-%--------------------------------------------
-
-\end{homeworkProblem}
+\clearpage
 
 %----------------------------------------------------------------------------------------
 %	PROBLEM 3
 %----------------------------------------------------------------------------------------
 
-\begin{homeworkProblem}[Prob. \Roman{homeworkProblemCounter}] % Roman numerals
+\begin{homeworkSection}[b. An\'{a}lisis DAFO] % 
+Debilidades:
+\begin{itemize}
 
-%--------------------------------------------
+\item A pesar de ser reconocidos en Espa\~{n}a, no tenemos demasiado mercado fuera del pa\'{i}s
+\item Alto coste de fabricaci\'{o}n para mantener nuestra calidad
 
-\begin{homeworkSection}{\homeworkProblemName:~(a)} % Using the problem name elsewhere
-\problemAnswer{ % Answer
-\lipsum[7]
-}
+\end{itemize}
+
+Amenazas:
+
+\begin{itemize}
+
+\item Que otras empresas compitan contra nosotros centr\'{a}ndose en nuestra ventaja competitiva y bajen los costes del producto
+\item Que no consigamos expandirnos fuera de Espa\~{n}a por alg\'{u}n problema de legislaci\'{o}n.
+
+\end{itemize}
+
+Fortalezas:
+
+\begin{itemize}
+
+\item Somos una marca referente en Espa\~{n}a
+\item Diferentes gamas de productos para satisfacer a diferentes consumidores
+
+\end{itemize}
+
+Oportunidades:
+
+\begin{itemize}
+
+\item Nuevos mercados con necesidades b\'{a}sicas que cubrimos gracias a nuestra amplia gama de productos
+
+\end{itemize}
+
+
+Iniciativas de Gesti\'{o}n de Conocimiento
+\begin{itemize}
+
+\item Hacer las p\'{a}ginas amarillas con el conocimiento de cada empleado, estableciendo as\'{i} un documento que recoge todos los perfiles de conocimiento de la empresa para futuras formaciones de grupos y b\'{u}squeda de requisitos en la empresa.
+
+\item Potenciar el mercado internacional aprovechando los mercados emergentes y nuestra amplia gama de productos. 
+\begin{enumerate}
+
+\item Analizar los perfiles de los empleados para escoger a los componentes de un equipo que se centrar\'{a} en el an\'{a}lisis de los diferentes mercados y en valorar los riesgos y los beneficios a la hora de expandirse a un nuevo mercado.
+
+\item Establecer un equipo de adaptaci\'{o}n de mercado, que establezca un plan para poder adaptar nuestra empresa a las necesidades del nuevo mercado a la hora de expandirnos. 
+Este equipo se encargar\'{a} tambi\'{e}n de la b\'{u}squeda de debilidades en los mercados, aprovechando las oportunidades que dejan otras empresas para poder impulsarnos de forma m\'{a}s efectiva en estos nuevos mercados.
+
+\end{enumerate}
+
+\item Conseguir que nuestra ventaja competitiva resida en la calidad, de esta forma no habr\'{a} ning\'{u}n problema en competencia de costes. 
+
+\begin{enumerate}
+\item Analizar los perfiles de los empleados para elegir a los expertos en procesos de calidad o para establecer grupos de formaci\'{o}n en procesos de calidad.
+
+\item Establecer un equipo de empleados que analice y monitorice nuestro proceso de calidad para poder reforzarlos, mejorando as\'{i} la calidad de nuestros productos.
+\end{enumerate}
+\item Llevar al d\'{i}a los permisos y legislaciones de los nuevos mercados internacionales a los que nos queramos expandir.
+Analizar los perfiles de los empleados para poder crear un grupo centrado en llevar al d\'{i}a la legislaci\'{o}n vigente del mercado internacional. [  ]
+
+\item Aprovechar nuestra fortaleza en Espa\~{n}a para empezar a expandir el mercado en pa\'{i}ses afines a este.
+Analizar el proceso de expansi\'{o}n en Espa\~{n}a y capturar c\'{o}mo se ha desarrollado durante el tiempo para poder replicarlo y mejorarlo en esos pa\'{i}ses.
+
+\item Aprovechar posibles carencias en otros mercados que conseguimos cubrir con nuestros productos, para as\'{i} impulsar a nuestra empresa de forma m\'{a}s efectiva explotando las debilidades de otras empresas.
+
+
+
+\end{itemize}
+
 \end{homeworkSection}
+\clearpage
 
-%--------------------------------------------
+%------------------------------------------------------------------------
 
-\begin{homeworkSection}{\homeworkProblemName:~(b)}
-\lipsum[8]\vspace{10pt} % Question
+\begin{homeworkSection}[c. P\'{a}ginas amarillas] % Custom section title
 
-\problemAnswer{ % Answer
-\lipsum[9]
-}
+\begin{itemize}
+
+
+\item ¿D\'{o}nde guardaremos esta informaci\'{o}n?\\
+La informaci\'{o}n de cada empleado estar\'{a} guardada en una base de datos relacional en la que se dividir\'{a}n todos estos datos en tablas, manteniendo as\'{i} un registro ordenado sobre cada una de las caracter\'{i}sticas de los empleados.
+\item ¿De d\'{o}nde recogemos la informaci\'{o}n?\\
+La informaci\'{o}n de los perfiles de este documento se recoger\'{a} y se actualizar\'{a} desde la base de datos del departamento de recursos humanos, por lo que los empleados no ser\'{a}n los encargados de introducir esta informaci\'{o}n.
+\item ¿C\'{o}mo accederemos a ella?\\
+Se podr\'{a} acceder a todas las fichas de empleados y a su informaci\'{o}n mediante un buscador, en el cual se filtrar\'{a} la b\'{u}squeda mediante diferentes m\'{e}todos (nombre, proyecto, cursos, tags de conocimiento…) y se visualizar\'{a} una lista de resultados en forma de fichas de empleados que pasen los filtros.
+Tambi\'{e}n se puede acceder a informaci\'{o}n sobre cursos, departamentos, proyectos… desde los hiperv\'{i}nculos de la propia ficha del empleado desde la cual se redirigir\'{a} al usuario a la informaci\'{o}n buscada.
+
+
+\includegraphics[width=0.85\columnwidth]{PA} % Example image
+\end{itemize}
 \end{homeworkSection}
+\clearpage
 
 %--------------------------------------------
+
+\begin{homeworkSection}[d. Lista de procesos] 
+
+\begin{itemize}
+\item (E)An\'{a}lisis de la trayectoria a nivel nacional de la empresa (buenas pr\'{a}cticas)
+\item (E)Satisfacci\'{o}n de los empleados
+\item (E)An\'{a}lisis y reducci\'{o}n del impacto medioambiental del proceso de producci\'{o}n 
+\\
+
+\item (O)Atenci\'{o}n al cliente
+\item (O)Mejora del proceso de fabricaci\'{o}n de electrodom\'{e}sticos
+\item (O)Formaci\'{o}n / Adecuaci\'{o}n de los empleados a los puestos
+\\
+
+\item (S)Gesti\'{o}n adecuada de nuestros empleados
+\item (S)Mejora en la gesti\'{o}n de los materiales
+\item (S)Atenci\'{o}n a las sugerencias y reclamaciones (clientes y empleados)
+
+\end{itemize}
+\end{homeworkSection}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkSection}[e. Definici\'{o}n de procesos ] % Custom section title
+\begin{center}
+Mejora del proceso de fabricaci\'{o}n de electrodom\'{e}sticos
+
+\begin{itemize}
+
+\item Objetivos:  Mejorar nuestro proceso de fabricaci\'{o}n para conseguir mejorar nuestra ventaja competitiva frente a la competencia
+\item Inicio: Buscar en los perfiles de los empleados para encontrar a los m\'{a}s adecuados
+\item Fin: Asignar a las personas id\'{o}neas al grupo
+\item Propietario: El encargado de ese \'{a}mbito (Champion)
+\item Cliente: La misma empresa es la que est\'{a} interesada en llevar a cabo el proceso
+\item Proveedor: La propia empresa es la proveedora
+
+\includegraphics[height=0.75\columnwidth]{pFab} % Example image
+\clearpage
+\end{itemize}
+
+Potenciar un marketing a nivel internacional
+
+\begin{itemize}
+\item Objetivos: Potenciar el mercado internacional aprovechando los mercados emergentes y nuestra amplia gama de productos
+\item Inicio: Analizar a los empleados que van a estar encargados
+\item Fin: Ser los putos amos del mundo
+\item Propietario: El encargado del departamento de marketing
+\item Cliente: La misma empresa es la que est\'{a} interesada en llevar a cabo el proceso
+\item Proveedor: La propia empresa es la proveedora
+
+\includegraphics[width=0.75\columnwidth]{MarketInt} % Example image
+
+\end{itemize}
+\end{center}
+
+\end{homeworkSection}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkSection}[f. Identificaci\'{o}n de los proceos relacionados con el plan estrat\'{e}gico] % Custom section title
+
+Los procesos del apartado 1.2.d que est\'{a}n relacionados con nuestras iniciativas de gesti\'{o}n del conocimiento son los siguientes:
+\begin{itemize}
+
+\item Lograr un marketing efectivo a nivel internacional: este proceso est\'{a} relacionado con nuestra iniciativa de potenciaci\'{o}n del mercado a nivel internacional. Al conseguir realizar este proceso con \'{e}xito, conseguiremos aumentar la presencia internacional de nuestra empresa y por consiguiente, mejorar las ventas.
+
+\item An\'{a}lisis y reducci\'{o}n del impacto medioambiental del proceso de producci\'{o}n: este proceso est\'{a} relacionado con nuestra iniciativa de crear un equipo de empleados que analice y monitorice nuestro proceso de calidad de la producci\'{o}n de nuestros productos. Consiguiendo realizar correctamente este proceso, conseguiremos potenciar nuestra ventaja competitiva (calidad de la producci\'{o}n).
+
+\item Mejora del proceso de fabricaci\'{o}n de los electrodom\'{e}sticos: este proceso est\'{a} muy relacionado tanto con el proceso anterior como con la iniciativa del mismo. 
+
+\item Formaci\'{o}n de los empleados: este proceso es uno de los procesos m\'{a}s importantes de nuestro proceso de gesti\'{o}n del conocimiento, ya que para llevar a cabo las iniciativas en las que necesitamos un equipo, el conocimiento de nuestro personal tiene que estar actualizado, por lo que la formaci\'{o}n es algo esencial.
+
+\item Gesti\'{o}n adecuada de nuestros empleados: en la creaci\'{o}n de los grupos de gesti\'{o}n de conocimiento para diversas iniciativas, tenemos que llevar una gesti\'{o}n de nuestro personal 
+
+\item Mejora de la gesti\'{o}n de los materiales: este proceso est\'{a} relacionado con la iniciativa de an\'{a}lisis y monitorizaci\'{o}n del proceso de calidad de la producci\'{o}n de nuestros productos, ya que el hecho de llevar una gesti\'{o}n m\'{a}s evolucionada, puede ayudar a nuestra empresa a competir en costes con la competencia.
+
+\end{itemize}
+\end{homeworkSection}
+\clearpage
+
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkSection}[h. Identificar las fuentes externas de conocimiento, que posiblemente sean necesarias ] % Custom section title
+\begin{itemize}
+\item Proveedores: 
+\item Gobierno/Legislaci\'{o}n: Esta fuente nos proporciona informaci\'{o}n sobre los aspectos legales del mercado y de la producci\'{o}n aportando los cambios y modificaciones de las leyes que rigen el comportamiento de los procesos.
+\item Empresas de formaci\'{o}n externas: Estas empresas aportan el conocimiento asociado a la formaci\'{o}n, es decir, estas empresas aportan se dedican a formar y con esta actividad aparece trasladan su conocimiento a nuestros empleados, lo que conlleva tambi\'{e}n traslado de conocimiento a nuestra empresa.
+\end{itemize}
+
+\end{homeworkSection}
+\end{homeworkProblem}
+\clearpage
+
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[1.3. Estudio de viabilidad] % Custom section title
+\begin{itemize}
+\item Viabilidad econ\'{o}mica: nuestras iniciativas tienen un coste considerablemente bajo comparado con los beneficios que pueden llegar a aportar. Esto se debe a que para la gran mayor\'{i}a de ellas, vamos a utilizar a nuestra propia fuerza de trabajo por lo que los costes de contrataci\'{o}n/ampliaci\'{o}n de contratos, van a ser bajos. Para las iniciativas de mejora de nuestros propios trabajadores utilizaremos empresas externas que pueden subir el coste de la iniciativa pero los beneficios que esperamos de las iniciativas superan ampliamente a los costes.
+
+\item Viabilidad t\'{e}cnica: todas las necesidades tecnol\'{o}gicas relacionadas con nuestras iniciativas las tenemos ya en nuestra empresa menos las necesarias para el desarrollo de las p\'{a}ginas amarillas. Para la mejora del proceso de calidad puede ser que necesitemos m\'{a}s herramientas pero no consideramos que estos costes vayan a ser demasiado elevados.
+ 
+\item Viabilidad del proyecto: en nuestra opini\'{o}n todas nuestras iniciativas son realistas y se pueden llevar a cabo en el tiempo adecuado para el correcto desarrollo del proceso de gesti\'{o}n del conocimiento.
+
+\end{itemize}
 
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
-%	PROBLEM 4
-%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[1.4. Definici\'{o}n de Indicadores de Gesti\'{o}n del Conocimiento] % Custom section title
 
-\begin{homeworkProblem}[Prob. \Roman{homeworkProblemCounter}] % Roman numerals
-\problemAnswer{ % Answer
-\lipsum[10]
-}
+\begin{itemize}
+\item La Actividad: nivel de uso y aprovechamiento de los distintos procesos y canales de gesti\'{o}n del conocimiento-> 
+Nº de usuarios, Nº de miembros, Nº de consultas...
+\item El Conocimiento: nivel de conocimiento generado y/o registrado y su nivel de consumo o aprovechamiento-> 
+Nº de buenas pr\'{a}cticas generadas, Nº de lecciones aprendidas generadas, Nº de ideas propuestas...
+\item Los Impactos o beneficios que se est\'{a}n obteniendo, tanto cualitativos como cuantitativos-> 
+Nº de personas que han mejorado su formaci\'{o}n, % de miembros en proyectos de mejora de la calidad, Nº de casos que se resuelven con el conocimiento existente...
+
+\end{itemize}
+
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[2.1. Definir el ciclo de vida de GC propuesto por esta iniciativa y establecer reglas y horarios] % Custom section title
+\begin{center}
+No sabemos contestar a esta pregunta
+\end{center}
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[2.2. Definici\'{o}n de plataformas t\'{e}cnicas, el sistema de gesti\'{o}n de documentos, herramientas y t\'{e}cnicas a utilizar] % Custom section title
+\begin{itemize}
+\item Comunidad de pr\'{a}cticas: implementaremos esto como un foro en el que cualquier empleado podr\'{a} preguntar cualquier duda que le pueda surgir a la hora de implementar una soluci\'{o}n a un problema o cualquier sugerencia que se le ocurra y el resto de los empleados podr\'{a}n aconsejarle/ plantearle soluciones para su problema y/o indicar si ese problema ha surgido en el pasado. Eventualmente, los threads m\'{a}s utilizados y m\'{a}s \'{u}tiles, pasar\'{a}n a la secci\'{o}n de buenas pr\'{a}cticas.
+
+\item Buenas pr\'{a}cticas: una vez una soluci\'{o}n sea utilizada de manera consistente y sea aprobada por los expertos en el \'{a}mbito (una soluci\'{o}n a un problema concreto que se da numerosas veces) pasar\'{a} a ser considerado una buena pr\'{a}ctica y pasar\'{a} a esta secci\'{o}n de la plataforma implementada previamente.
+
+\item Lecciones aprendidas: cuando una buena pr\'{a}ctica sea consistentemente utilizada y mejorada, pasar\'{a} a formar parte de las lecciones aprendidas de la empresa. En este apartado se detallar\'{a} tanto el problema, como todas las implementaciones de soluciones que se hayan dado a lo largo del tiempo (en el estilo de un log de soluciones posibles desarrolladas a lo largo de la historia de la empresa) con la \'{u}ltima soluci\'{o}n (en teor\'{i}a deber\'{i}a ser la m\'{a}s \'{o}ptima) como la recomendada para la implementaci\'{o}n.
+
+\item P\'{a}ginas amarillas: esta parte de las iniciativas estar\'{a} relacionada en algunas partes con las comunidades de pr\'{a}cticas/ buenas pr\'{a}cticas/ lecciones aprendidas pero a\~{n}adir\'{a} mucha m\'{a}s informaci\'{o}n de los empleados como su formaci\'{o}n, los cursos en los que han participado… (como se menciona en un apartado previo).
+
+\end{itemize}
+\end{homeworkProblem}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[3.1. Identificaci\'{o}n del equipo GC] % Custom section title
+\begin{itemize}
+
+\item Champion: persona encargada de promover e impulsar la gesti\'{o}n del conocimiento dentro de la empresa. Es el pilar del equipo por lo que tiene que estar completamente inmerso en el proceso de gesti\'{o}n del conocimiento.
+\item Representantes de las TICs: los encargados de las TIC de la empresa (tanto de las existentes como de cualquiera de las herramientas que necesitemos para el desarrollo de nuestras iniciativas)
+\item Representantes de las \'{a}reas funcionales que van involucradas en las iniciativas de gesti\'{o}n del conocimiento.
+
+\end{itemize}
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[3.2. Estrategias para la captura del conocimiento] % Custom section title
+Las estrategias de captura del conocimiento que hemos elegido utilizar est\'{a}n alineadas con nuestras iniciativas, ya que para llevar a cabo muchas de ellas, hace falta que sigamos estas directrices:
+\begin{itemize}
+\item Captura del conocimiento t\'{a}cito de nuestros empleados, llevaremos a cabo la captura del conocimiento usando diferentes herramientas. Para esta estrategia, las herramientas que utilizaremos ser\'{a}n evernote, entrevistas a nuestro personal, las comunidades de pr\'{a}cticas (ser\'{a}n utilizadas tanto para capturar el conocimiento como para gestionarlo y ampliarlo).
+\item An\'{a}lisis del funcionamiento de los procesos de nuestra empresa y los posibles puntos en los que se puedan mejorar / debilidades de nuestros procesos.
+\item Digitalizaci\'{o}n de todo el conocimiento expl\'{i}\'{i}cito que no est\'{e} computerizado para facilitar el acceso al mismo y hacer m\'{a}s sencillo el proceso de la espiral del conocimiento. Para llevar a cabo esta estrategia tambi\'{e}n se utilizar\'{a}n las comunidades de pr\'{a}cticas para que los expertos en el tema puedan a\~{n}adir al sistema los documentos que consideren relevantes y puedan descartar (o a\~{n}adir en otro apartado) los elementos que no est\'{e}n actualizados o no sean relevantes/consistentes con el estado actual de la empresa.
+\end{itemize}
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[3.3. Dise\~{n}o detallado de la estructura de los documentos de cada uno de los elementos del conocimiento] % Custom section title
+Los documentos que necesitaremos para el desempe\~{n}o de nuestras iniciativas son los siguientes:
+\begin{itemize}
+\item Buenas pr\'{a}cticas
+\item Proceso + buena realizaci\'{o}n
+\item Lecciones aprendidas
+\item Formularios para rellenar
+\item Formularios de entrevistas
+\item Tests
+\item Documento de alcance y viabilidad
+\item P\'{a}ginas amarillas
+\item P\'{a}ginas blancas
+\end{itemize}
+El dise\~{n}o general del encabezado de todos los documentos ser\'{a} el siguiente:
+\\
+\includegraphics[width=0.75\columnwidth]{docu} % Example image
+\clearpage
+
+\end{homeworkProblem}
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[4.1. Formaci\'{o}n para la implementaci\'{o}n del sistema] % Custom section title
+
+Es posible que los empleados no est\'{e}n familiarizados con las herramientas y estrategias que usaremos. 
+Se organizar\'{a}n unas sesiones de formaci\'{o}n en las que se ense\~{n}\~{n}ar\'{a} a los empleados a implantar/utilizar este nuevo sistema; bien organizadas por expertos empleados propios de la empresa o bien organizadas por expertos en formaci\'{o}n de este tipo de sistemas ajenos a nuestra empresa.
+El coste de las sesiones ser\'{a} pagado por la empresa, por lo que ning\'{u}\'{u}n empleado deber\'{a} pagar estos cursos, ya que asumimos que la formaci\'{o}n es la parte m\'{a}s importante para el correcto uso/implantaci\'{o}n del sistema y a la larga este gasto beneficiar\'{a} a la empresa.
+
+\end{homeworkProblem}
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[4.2. Diagrama de tiempos y actividades] % Custom section title
+\begin{center}
+No sabemos que es lo que quiere decir este apartado
+\end{center}
+
+\end{homeworkProblem}
+\clearpage
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}[5. Plan para el cambio en la cultura de la Gesti\'{o}n del Conocimiento] % Custom section title
+
+Para apoyar la implantaci\'{o}n y el uso de estas iniciativas de GC, llevaremos a cabo las siguientes acciones:
+\begin{itemize}
+\item Reuniones de introducci\'{o}n de iniciativas, donde se proveer\'{a} a los empleados de la informaci\'{o}n necesaria para el correcto uso e implantaci\'{o}n de estas iniciativas.
+\item Como soporte a las reuniones generales para todos los empleados, tambi\'{e}\'{e}n se promover\'{a} que los encargados de cada departamento de la empresa den cursos extraordinarios por si alguna persona de su departamento necesita ayuda con el uso de las herramientas.
+\item Como compensaci\'{o}n por el uso de las herramientas de gesti\'{o}n del conocimiento, se otorgar\'{a}n puntos los cuales luego se podr\'{a}n canjear por diferentes beneficios (los cuales no est\'{a}n definidos pero ser\'{a}n de tipo no econ\'{o}mico). Creemos que esta forma de compensaci\'{o}n no econ\'{o}\'{o}mica har\'{a} que se usen m\'{a}s habitualmente todas las propuestas que hemos llevado a cabo.
+\end{itemize}
+
+
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
