@@ -19,7 +19,7 @@
 
 % Set up the header and footer
 \pagestyle{fancy}% Top left header
-\rhead{\firstxmark} % Top right header
+\rhead{} % Top right header
 \lfoot{\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
 \rfoot{P\'{a}gina\ \thepage\ de\ \pageref{LastPage}} % Bottom right footer
@@ -33,17 +33,7 @@
 %	Skip this unless you know what you're doing
 %----------------------------------------------------------------------------------------
 
-% Header and footer for when a page split occurs within a problem environment
-\newcommand{\enterProblemHeader}[1]{
-\nobreak\extramarks{#1}\nobreak
-\nobreak\extramarks{#1}\nobreak
-}
 
-% Header and footer for when a page split occurs between problem environments
-\newcommand{\exitProblemHeader}[1]{
-\nobreak\extramarks{#1}{#1}\nobreak
-\nobreak\extramarks{#1}{}\nobreak
-}
 
 \setcounter{secnumdepth}{0} % Removes default section numbers
 \newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
@@ -53,9 +43,7 @@
 \stepcounter{homeworkProblemCounter} % Increase counter for number of problems
 \renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
 \section{\homeworkProblemName} % Make a section in the document with the custom problem count
-\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
-}{
-\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+
 }
 
 \newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
@@ -66,9 +54,7 @@
 \newenvironment{homeworkSection}[1][Parte \arabic{homeworkProblemCounter}]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
 \renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
 \subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
-\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
 }{
-\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
 }
    
 %----------------------------------------------------------------------------------------
@@ -265,8 +251,9 @@ La informaci\'{o}n de los perfiles de este documento se recoger\'{a} y se actual
 Se podr\'{a} acceder a todas las fichas de empleados y a su informaci\'{o}n mediante un buscador, en el cual se filtrar\'{a} la b\'{u}squeda mediante diferentes m\'{e}todos (nombre, proyecto, cursos, tags de conocimiento…) y se visualizar\'{a} una lista de resultados en forma de fichas de empleados que pasen los filtros.
 Tambi\'{e}n se puede acceder a informaci\'{o}n sobre cursos, departamentos, proyectos… desde los hiperv\'{i}nculos de la propia ficha del empleado desde la cual se redirigir\'{a} al usuario a la informaci\'{o}n buscada.
 
-
+\begin{center}
 \includegraphics[width=0.85\columnwidth]{PA} % Example image
+\end{center}
 \end{itemize}
 \end{homeworkSection}
 \clearpage
@@ -310,8 +297,10 @@ Mejora del proceso de fabricaci\'{o}n de electrodom\'{e}sticos
 \item Propietario: El encargado de ese \'{a}mbito (Champion)
 \item Cliente: La misma empresa es la que est\'{a} interesada en llevar a cabo el proceso
 \item Proveedor: La propia empresa es la proveedora
+\begin{center}
 
 \includegraphics[height=0.75\columnwidth]{pFab} % Example image
+\end{center}
 \clearpage
 \end{itemize}
 
@@ -325,7 +314,10 @@ Potenciar un marketing a nivel internacional
 \item Cliente: La misma empresa es la que est\'{a} interesada en llevar a cabo el proceso
 \item Proveedor: La propia empresa es la proveedora
 
+\begin{center}
+
 \includegraphics[width=0.75\columnwidth]{MarketInt} % Example image
+\end{center}
 
 \end{itemize}
 \end{center}
@@ -335,7 +327,7 @@ Potenciar un marketing a nivel internacional
 
 %----------------------------------------------------------------------------------------
 
-\begin{homeworkSection}[f. Identificaci\'{o}n de los proceos relacionados con el plan estrat\'{e}gico] % Custom section title
+\begin{homeworkSection}[f. Identificaci\'{o}n de los procseos] % Custom section title
 
 Los procesos del apartado 1.2.d que est\'{a}n relacionados con nuestras iniciativas de gesti\'{o}n del conocimiento son los siguientes:
 \begin{itemize}
@@ -358,9 +350,9 @@ Los procesos del apartado 1.2.d que est\'{a}n relacionados con nuestras iniciati
 
 
 %----------------------------------------------------------------------------------------
-\begin{homeworkSection}[h. Identificar las fuentes externas de conocimiento, que posiblemente sean necesarias ] % Custom section title
+\begin{homeworkSection}[h. Identificar las fuentes externas de conocimiento] % Custom section title
 \begin{itemize}
-\item Proveedores: 
+\item Proveedores: Nuestras iniciativas para la mejora de la calidad de nuestros productos requieren que la calidad de los materiales que nos proporcionan nuestros proveedores sea la m\'{a}s alta posible por lo que el conocimiento de los proveedores es uno de los pilares fundamentales de nuestra estrategia de gesti\'{o}n del conocimiento.
 \item Gobierno/Legislaci\'{o}n: Esta fuente nos proporciona informaci\'{o}n sobre los aspectos legales del mercado y de la producci\'{o}n aportando los cambios y modificaciones de las leyes que rigen el comportamiento de los procesos.
 \item Empresas de formaci\'{o}n externas: Estas empresas aportan el conocimiento asociado a la formaci\'{o}n, es decir, estas empresas aportan se dedican a formar y con esta actividad aparece trasladan su conocimiento a nuestros empleados, lo que conlleva tambi\'{e}n traslado de conocimiento a nuestra empresa.
 \end{itemize}
@@ -389,26 +381,72 @@ Los procesos del apartado 1.2.d que est\'{a}n relacionados con nuestras iniciati
 \begin{itemize}
 \item La Actividad: nivel de uso y aprovechamiento de los distintos procesos y canales de gesti\'{o}n del conocimiento-> 
 Nº de usuarios, Nº de miembros, Nº de consultas...
+\end{itemize}
+
+\begin{itemize}
 \item El Conocimiento: nivel de conocimiento generado y/o registrado y su nivel de consumo o aprovechamiento-> 
 Nº de buenas pr\'{a}cticas generadas, Nº de lecciones aprendidas generadas, Nº de ideas propuestas...
-\item Los Impactos o beneficios que se est\'{a}n obteniendo, tanto cualitativos como cuantitativos-> 
-Nº de personas que han mejorado su formaci\'{o}n, % de miembros en proyectos de mejora de la calidad, Nº de casos que se resuelven con el conocimiento existente...
-
 \end{itemize}
+
+\begin{itemize}
+\item Los Impactos o beneficios que se est\'{a}n obteniendo, tanto cualitativos como cuantitativos-> 
+Nº de personas que han mejorado su formaci\'{o}n, nº de miembros en proyectos de mejora de la calidad, Nº de casos que se resuelven con el conocimiento existente...
+\end{itemize}
+
+Mejora del proceso de calidad de electrodom\'{e}sticos
+
+\begin{itemize}
+\item El Conocimiento: nivel de conocimiento generado y registrado y su nivel de consumo o aprovechamiento para la mejora del proceso de calidad:
+\begin{itemize}
+\item Nº de de buenas pr\'{a}cticas creadas y el nivel de utilizaci\'{o}n de las mismas (>10/a\~{n}o)
+\item Nº de lecciones aprendidas creadas a partir de las buenas pr\'{a}cticas y el nivel de utilizaci\'{o}n de las mismas (>10/a\~{n}o)
+\item Nº de ideas propuestas para la mejora del proceso de calidad (>50/a\~{n}o)
+\end{itemize}
+\item La Actividad: nivel de uso y aprovechamiento de los distintos procesos y canales de gesti\'{o}n del conocimiento:
+\begin{itemize}
+\item Nº de usuarios que utilizan el conocimiento generado (>100/d\'{i}as)
+\item Nº de miembros que adem\'{a}s de utilizar el conocimiento, lo actualizan y mejoran (>10/d\'{i}as)
+\item Nº de consultas que se realizan a la base de datos creada (>500/d\'{i}as)
+\end{itemize}
+Las m\'{e}tricas que se utilizar\'{a}n para medir si esta iniciativa est\'{a} teniendo \'{e}xito son las que est\'{a}n entre par\'{e}ntesis en los indicadores previamente descritos.
+\end{itemize}
+
+
+Potenciar un marketing a nivel internacional
+
+\begin{itemize}
+\item El Conocimiento: nivel de conocimiento generado y su utilizaci\'{o}n para la mejora del marketing en el extranjero
+\begin{itemize}
+\item Nº de de buenas pr\'{a}cticas creadas y el grado de adecuaci\'{o}n tanto para un mercado en concreto como en general
+\item Nº de lecciones aprendidas creadas a partir de las buenas pr\'{a}cticas
+\item Nº de ideas propuestas para la expansi\'{o}n de la empresa en el extranjero
+\end{itemize}
+\item La Actividad: nivel de uso y aprovechamiento de los distintos procesos y canales de gesti\'{o}n del conocimiento
+\begin{itemize}
+\item Nº de usuarios que utilizan el conocimiento generado
+\item Nº de miembros que adem\'{a}s de utilizar el conocimiento lo aplican de manera innovadora en diferentes tipos de mercados
+\item Nº de consultas que se realizan a la base de datos creada, el nivel de aprovechamiento de la misma y la expansi\'{o}n del conocimiento
+\end{itemize}
+\end{itemize}
+
+
+
+
+
+
 
 \end{homeworkProblem}
 \clearpage
 
 %----------------------------------------------------------------------------------------
-\begin{homeworkProblem}[2.1. Definir el ciclo de vida de GC propuesto por esta iniciativa y establecer reglas y horarios] % Custom section title
-\begin{center}
-No sabemos contestar a esta pregunta
-\end{center}
-
+\begin{homeworkProblem}[2.1. Definir el ciclo de vida de GC propuesto por esta iniciativa y establecer reglas y horarios] 
+El ciclo de vida del sistema de gesti\'{o}n del conocimiento propuesto comienza con la captura del conocimiento y su almacenamiento en las p\'{a}ginas amarillas. Comenzando con esta actividad conseguimos que el resto de las iniciativas sean m\'{a}s eficaces ya que los equipos encargados de llevarlas a cabo ser\'{a}n creados m\'{a}s f\'{a}cilmente y de una manera m\'{a}s \'{o}ptima. \\ \\
+En segunda instancia, para las diferentes iniciativas, se crear\'{a} el equipo de gesti\'{o}n del conocimiento y este equipo se encargar\'{a} de realizar la iniciativa en concreto. \\ \\
+Una vez se termine la iniciativa (la cual utilizar\'{a} el conocimiento existente en el momento actual en la empresa), se actualizar\'{a} el conocimiento introduciendo las buenas pr\'{a}cticas y las lecciones aprendidas en la realizaci\'{o}n de la misma.\\ \\
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
-\begin{homeworkProblem}[2.2. Definici\'{o}n de plataformas t\'{e}cnicas, el sistema de gesti\'{o}n de documentos, herramientas y t\'{e}cnicas a utilizar] % Custom section title
+\begin{homeworkProblem}[2.2. Definici\'{o}n de plataformas t\'{e}cnicas, el sistema de gesti\'{o}n de documentos, herramientas y t\'{e}cnicas] % Custom section title
 \begin{itemize}
 \item Comunidad de pr\'{a}cticas: implementaremos esto como un foro en el que cualquier empleado podr\'{a} preguntar cualquier duda que le pueda surgir a la hora de implementar una soluci\'{o}n a un problema o cualquier sugerencia que se le ocurra y el resto de los empleados podr\'{a}n aconsejarle/ plantearle soluciones para su problema y/o indicar si ese problema ha surgido en el pasado. Eventualmente, los threads m\'{a}s utilizados y m\'{a}s \'{u}tiles, pasar\'{a}n a la secci\'{o}n de buenas pr\'{a}cticas.
 
@@ -461,7 +499,10 @@ Los documentos que necesitaremos para el desempe\~{n}o de nuestras iniciativas s
 \end{itemize}
 El dise\~{n}o general del encabezado de todos los documentos ser\'{a} el siguiente:
 \\
+\\
+\begin{center}
 \includegraphics[width=0.75\columnwidth]{docu} % Example image
+\end{center}
 \clearpage
 
 \end{homeworkProblem}
@@ -475,9 +516,9 @@ El coste de las sesiones ser\'{a} pagado por la empresa, por lo que ning\'{u}\'{
 \end{homeworkProblem}
 %----------------------------------------------------------------------------------------
 \begin{homeworkProblem}[4.2. Diagrama de tiempos y actividades] % Custom section title
-\begin{center}
-No sabemos que es lo que quiere decir este apartado
-\end{center}
+Consideramos que la formaci\'{o}n de nuestros empleados es uno de los pilares fundamentales para el buen desarrollo de nuestro sistema de gesti\'{o}n del conocimiento, por eso hemos decidido que dicha formaci\'{o}n se realizar\'{a} en horario laboral y que esas horas en las que nuestros empleados est\'{a}n siendo formados para el correcto uso de las herramientas, ser\'{a}n remuneradas.\\ \\
+Para que los procesos de nuestra empresa no queden parados, se realizar\'{a} la formaci\'{o}n en dos turnos, uno de ma\~{n}ana y otro de tarde. Los empleados ser\'{a}n distribuidos equitativamente entre los dos turnos dependiendo de sus necesidades y sus horarios laborales.\\ \\
+Los encargados de los departamentos (los cuales tienen que tener una formaci\'{o}n m\'{a}s alta que los empleados de dichos departamentos) asistir\'{a}n a los grupos de formaci\'{o}n previamente mencionados y adem\'{a}s fuera del horario laboral participar\'{a}n en cursos de formaci\'{o}n online para que en caso de que alg\'{u}n empleado de sus departamento no est\'{e} cumpliendo con las m\'{e}tricas establecidas para el correcto funcionamiento del sistema de gesti\'{o}n del conocimiento poder solucionarlo de una manera adecuada.
 
 \end{homeworkProblem}
 \clearpage
@@ -493,7 +534,49 @@ Para apoyar la implantaci\'{o}n y el uso de estas iniciativas de GC, llevaremos 
 
 
 \end{homeworkProblem}
-
+\clearpage
 %----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem} [Anexos]
+Entrevista: 
+\\
+
+Entrevista semiesteucturada
+Tema: Gesti\'{o}n del proceso de producci\'{o}n de los electrodom\'{e}sticos
+
+Hola ........., si no me equivoco pertenece al dpto.  ............., ¿Est\'{a} usted contento en su actual puesto?
+\begin{itemize}
+\item ¿C\'{o}mo definir\'{i}a el ambiente de trabajo en su departamento?
+\item ¿Qu\'{e} otras responsabilidades le gustar\'{i}a asumir?
+Entrega: Darle un texto sobre nuevas normas en la empresa, el empleado deber\'{a} extraer y explicitar los cambios necesarios a establecer en los procesos/actividades correspondientes a su puesto de trabajo.
+
+\item ¿Le son familiares los procesos de producci\'{o}n?
+\item ¿Cree usted que es necesario alg\'{u}n cambio/regulaci\'{o}n en los procesos?¿Con qu\'{e} fin?
+\item ¿Tiene alg\'{u}n familiar que dependa de usted?
+S\'{i} - ¿Cree usted que su trabajo presenta un obstáculo a la hora de prestar la atenci\'{o}n necesaria a esta(s) persona(s)?
+\item ¿C\'{o}mo cambiar\'{i}a su situaci\'{o}n en caso de tener que cambiar a un puesto en el extranjero?¿Podr\'{i}a permitirse ese cambio?
+No - ¿Tiene previsto alg\'{u}n compromiso  que pudiese propiciar esto (boda, nacimiento…)?
+\item ¿Cree usted que un compromiso de este tipo podr\'{i}a conllevar cambios notorios en su rendimiento o incluso la necesidad de llevar a cabo alg\'{u}n cambio/ajuste en su puesto de trabajo?
+
+Muchas gracias ............, ha sido un placer haber establecido esta entrevista con usted, le enviaremos el resultado de lo extra\'{i}do en el proceso para poder contrastar con su opini\'{o}n. Le llamaremos cuando finalice el proceso de entrevistas.
+\end{itemize}
+
+Entrevista estructurada
+Tema: Gesti\'{o}n del proceso de producci\'{o}n de los electrodom\'{e}sticos
+Hola ..........., si no me equivoco pertenece al dpto.  .............., ¿Est\'{a} usted contento en su actual puesto?
+\begin{itemize}
+\item ¿En su opini\'{o}n, existe un buen ambiente de trabajo dentro de su dpto.?
+\item ¿Le gustar\'{i}a asumir m\'{a}s responsabilidades?
+\item ¿Le son familiares los procesos de producci\'{o}n?
+\item ¿Cree usted que es necesario alg\'{u}n cambio/regulaci\'{o}n en los procesos?
+\item ¿Tiene alg\'{u}n familiar que dependa de usted?
+S\'{i} - ¿Cree usted que su trabajo presenta un obst\'{a}culo a la hora de prestar la atención necesaria a esta(s) persona(s)?
+\item ¿Presentar\'{i}a su situaci\'{o}n cambios dr\'{a}sticos en caso de tener que cambiar a un puesto en el extranjero?¿Podr\'{i}a permitirse ese cambio?
+No - ¿Tiene previsto algún compromiso  que pudiese propiciar esto (boda, nacimiento…)?
+\item ¿Cree usted que un compromiso de este tipo podr\'{i}a conllevar cambios notorios en su rendimiento o incluso la necesidad de llevar a cabo algún cambio/ajuste en su puesto de trabajo?
+
+Muchas gracias ..............., ha sido un placer haber establecido esta entrevista con usted, le enviaremos el resultado de lo extra\'{u}do en el proceso para poder contrastar con su opini\'{o}n. Le llamaremos cuando finalice el proceso de entrevistas.
+\end{itemize}
+\end{homeworkProblem}
 
 \end{document}
